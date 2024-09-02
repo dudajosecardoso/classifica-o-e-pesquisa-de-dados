@@ -90,7 +90,7 @@ def quickSort(array, inicio, fim):
     quickSort(array, pivo + 1, fim)
 
 def particiona_aleatoria(array, inicio, final):
-    # Escolhe um pivô aleatório
+    #nota para dudinha: escolhe um pivô aleatório para listas ou arrays ordenados ou ordenados ao inverso 
     pivo_index = random.randint(inicio, final)
     array[inicio], array[pivo_index] = array[pivo_index], array[inicio]
     return particiona(array, inicio, final)

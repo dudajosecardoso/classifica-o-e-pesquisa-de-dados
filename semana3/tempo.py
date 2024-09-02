@@ -39,7 +39,6 @@ def bubbleSort(array):
     return array
 
 
-
 def shellSort(array):
     count = len(array) // 2
     while count > 0:
@@ -86,9 +85,15 @@ def merge(left, right):
 def quickSort(array, inicio, fim):
     if fim - inicio <= 1:  
         return
-    pivo = particiona(array, inicio, fim)
+    pivo = particiona_aleatoria(array, inicio, fim)
     quickSort(array, inicio, pivo - 1)
     quickSort(array, pivo + 1, fim)
+
+def particiona_aleatoria(array, inicio, final):
+    # Escolhe um pivô aleatório
+    pivo_index = random.randint(inicio, final)
+    array[inicio], array[pivo_index] = array[pivo_index], array[inicio]
+    return particiona(array, inicio, final)
 
 def particiona(array, inicio, final):
     esq = inicio
@@ -105,10 +110,9 @@ def particiona(array, inicio, final):
     return dir
 
 
-
-#array = sorted(random.sample(range(1, 10001), 1000)) #aleatorios ordenados #a
-#array = sorted(random.sample(range(1, 10001), 1000), reverse=True) #aleatorios ordenados ao contrario #b
-array =  random.sample(range(1000*2), 1000) #aleatorios sem elementos repetidos #d
+#array = sorted(random.sample(range(1, 10000), 1000)) #aleatorios ordenados #a
+array = sorted(random.sample(range(1, 10000), 1000), reverse=True) #aleatorios ordenados ao contrario #b
+#array =  random.sample(range(1000*2), 1000) #aleatorios sem elementos repetidos #d
 #array = [random.randint(1, 10001) for _ in range(1000)] # aleatorios com elementos repetidos #c
 n = len(array)
 quickSort(array, 0, n - 1)

@@ -1,0 +1,18 @@
+Questões de Reflexão
+a. Qual método teve o menor número de comparações em média?
+Depois de testar os métodos, percebi que a busca binária, seja na versão iterativa ou recursiva, geralmente faz menos comparações.
+Isso acontece porque ela corta a lista pela metade a cada vez, o que é super eficiente para listas que já estão ordenadas.
+A pesquisa por salto também é boa, mas pode variar dependendo de como os dados estão distribuídos. No geral, a busca binária se saiu melhor.
+
+b. Em quais situações você acha que cada método seria mais apropriado?
+A busca binária é melhor para listas ordenadas. É rápida e fácil de usar.
+Já a pesquisa por salto é legal quando estamos lidando com listas muito grandes, onde a busca binária pode ficar meio lenta. 
+Ela funciona melhor quando os elementos estão bem distribuídos. A pesquisa Fibonacci pode ser útil quando acessar a memória é caro,
+pois sua lógica ajuda a reduzir o número de acessos.
+
+c. Como a ordenação da lista afeta a eficiência de cada método?
+A ordenação da lista é super importante para todos esses métodos.
+A busca binária, a pesquisa por salto e a pesquisa Fibonacci só funcionam direito em listas ordenadas.
+Se a lista estiver bagunçada, esses métodos não vão encontrar o que você procura e podem até falhar. 
+Além disso, se a lista não estiver ordenada, eles vão fazer muito mais comparações e o tempo de busca vai aumentar.
+Então, garantir que a lista esteja em ordem é fundamental para que tudo funcione direitinho.

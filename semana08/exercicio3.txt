@@ -16,3 +16,4 @@ A busca binária, a pesquisa por salto e a pesquisa Fibonacci só funcionam dire
 Se a lista estiver bagunçada, esses métodos não vão encontrar o que você procura e podem até falhar. 
 Além disso, se a lista não estiver ordenada, eles vão fazer muito mais comparações e o tempo de busca vai aumentar.
 Então, garantir que a lista esteja em ordem é fundamental para que tudo funcione direitinho.
+

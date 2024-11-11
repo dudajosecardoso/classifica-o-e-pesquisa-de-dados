@@ -1,3 +1,10 @@
+#Crie um TAD (Tipo Abstrato de Dados) de ABB, com, no mínimo, funções para:
+#criação;
+#inserção;
+#impressão (percurso em pré-ordem, pós-ordem, ordem simétrica);
+#remoção;
+#busca.
+
 class Node:
     def __init__(self, val, left=None, right=None):
         self.val = val
